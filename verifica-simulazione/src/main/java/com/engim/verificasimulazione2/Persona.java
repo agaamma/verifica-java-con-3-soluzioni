@@ -7,6 +7,13 @@ public class Persona {
         UOMO, DONNA
     }
 
+    public Persona(String nome, String sesso) {
+        this.nome = nome;
+        if(sesso.equals("UOMO"))
+        this.sesso = Sesso.UOMO;
+        else this.sesso = Sesso.DONNA;
+    }
+
     public String getNome() {
         return nome;
     }
